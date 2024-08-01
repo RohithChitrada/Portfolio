@@ -1,0 +1,92 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 80px;
+    padding-top: 70px;
+    height: 90.5vh;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project {
+    border: 1px solid #f6ebeb;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: auto;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .project-info {
+    padding: 20px;
+    --tw-text-opacity: 1;
+    color: rgb(102 102 102 / var(--tw-text-opacity));
+  }
+  .tech{
+    --tw-text-opacity: 1;
+    color: rgb(102 102 102 / var(--tw-text-opacity));
+  }
+  
+  .project-info h3{
+    margin-top: 0;
+    color: black;
+  }
+  
+  .project-actions {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  .view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }.view img{
+    width: 20px;
+    height: 20px;
+  }
+  .button {
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .project.dark-theme {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .project.dark-theme .project-info {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .project.dark-theme .project-actions {
+    background-color: #333;
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 1111px) {
+    .projects-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 80px;
+      padding-top: 70px;
+      height: auto;
+    }
+  }

@@ -1,0 +1,136 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .navbar p {
+    font-size: 28px;
+    font-weight: 600;
+    /* color: rgb(25, 134, 171); */
+    background: linear-gradient(270deg,#DF8908 10%,#B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: cursive;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 18px;
+  }
+  
+  .nav-menu li {
+    display: inline;
+    cursor: pointer;
+  }
+  
+  .nav-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav-menu a:hover {
+    color: rgb(25, 134, 171);
+  }
+  
+  .nav-menu li:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    transition: 0.3s;
+  }
+  
+  .social-links {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    font-size: 18px;
+  }
+  
+  .social-links li {
+    cursor: pointer;
+  }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+    .hamburger {
+      display: flex;
+      transform: rotate(90 deg);
+    }
+    .nav-menu.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 55px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding: 20px;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .nav-menu.open li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-theme .nav-menu li a {
+  color: #fff;
+  transition: color 0.3s;
+}
+.dark-theme .nav-menu li a:hover {
+  color: rgb(25, 134, 171);
+}
+.dark-theme .nav-menu.open {
+  background-color: #333;
+  color: white;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  color: #333;
+  font-size: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.dark-theme .bar{
+  background-color: white;
+}
+
+.dark-theme .theme-toggle {
+  color: #fff;
+}

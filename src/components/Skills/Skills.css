@@ -1,0 +1,87 @@
+.skills-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.skills-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.skills-info h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.skills-info p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-hero-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-section h2 {
+  margin-bottom: 50px;
+}
+
+.skills-img, .tools-img {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.skills-img img, .tools-img img {
+  width: 60px;
+  height: 60px;
+}
+.skills-final .light-theme {
+    background-color: white;
+    color: black;
+  }
+  
+  .skills-final.dark-theme {
+    background-color: black;
+    color: white;
+  }
+.dark-theme p {
+    color: white;
+}
+.dark-theme h1 {
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .skills-img, .tools-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 100px;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .skills-img, .tools-img {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills-img, .tools-img {
+      grid-template-columns: 1fr;
+  }
+}
